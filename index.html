@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        #maindiv{
+            width: 85%;height: auto;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+        }
+        #left{
+            width: 18%;height: auto;
+            
+        }
+        #center{
+            width: 54%;height: auto;
+            padding: 20px;
+            margin: auto;
+        }
+        
+        .news_source{
+            width:100%;height: 20px;
+        }
+        #right{
+            width: 23%;height: auto;
+        }
+        .latest_news{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        .latest_news_heading{
+            font-weight: bold;
+            line-height: 20px;
+            font:900;
+            cursor: pointer;
+            
+        }
+        .latest_news_heading:hover{
+            font-weight:bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           
+        }
+        .latest_news div{
+            padding: 5px;            
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+         .latest_news h4{            /* heading of colm */
+            margin-bottom: 5px;
+            text-align: center;
+            font-weight:900;
+            
+        }
+        .see_more{
+            color:  #00b1cd;
+            font-weight: bolder;
+            text-align: center;
+            margin: auto;
+            cursor: pointer;            
+        }
+        /* for top news */
+        .top_news h4{            /* heading of colm */
+            margin-bottom: -5px;
+            text-align: center;
+            font-weight:900;
+            margin-top: 60px;
+        }
+        .top_news div{
+            padding: 5px;            
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+        .top_news{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        /* right side */
+        .subdiv_shadow{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+        .div_shadow{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        *{
+            padding: 5px;
+        }
+        .right_1_big_img{
+        width: 100%;
+        }
+        
+        .rightside_div{
+            display: inline;
+            width: 100%;height: 150px;
+        }
+        /* -----=====---===-=====center-----======= */
+        #center{
+             margin-top: -40px; /*##@@@@@@@^^^^^^^*****$$$$#### yu need to take care of it during merging */
+        }
+        .center_heading{
+            font-size: larger;
+            font-weight: 800;
+            font-family:Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+        .main_heading{
+            font: 100px;
+            font-weight: 1000;font-family: Arial, Helvetica, sans-serif;
+            color:#00b1cd;
+            text-align: center;
+            text-decoration:underline;
+        }
+       
+        
+        
+    </style>
+</head>
+<body>
+     <div id="maindiv"> <!--this is main div -->
+        <div id="left">  <!--this is left div -->
+            
+            <div class="latest_news"></div>
+            <div class="top_news"></div>
+
+        </div>
+        <div id="center"></div>  <!--this is center div -->
+
+        <div id="right"></div>   <!--this is right div -->
+    </div>
+</body>
+</html>
+
+
+<script src="home left side.js"></script>
+<script src="center.js"></script>
+<script src="center1.js"></script>
+<script src="home right side.js"></script>
+<script src="home center side.js"></script>
