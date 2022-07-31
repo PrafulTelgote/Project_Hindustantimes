@@ -67,11 +67,11 @@ https://clonehindustantimes.netlify.app
 ### Netlify Link
 
 https://clonehindustantimes.netlify.app
- ------
+------
  <h1>WEBSITE USER FLOW ></h1>
- ----
+----
 the user flow that we tried to maintain is,
-
+----
 home -> login/signup -> dashboard -> get started to news -> create user Id-> Enter email details -> choose package -> payment status.
 ----
  <h1>TEAM MEMBERS AND MESSAGE></h1>
@@ -85,5 +85,4 @@ we really enjoyed this whole part of developing and had a learing experience and
 - **[Jitesh Babani]**
 - **[Praful Telgote]**
 - **[Rupak Tyagi]**
-
 ---
