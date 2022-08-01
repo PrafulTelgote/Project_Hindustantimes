@@ -67,6 +67,7 @@ https://hindustantimescloned.netlify.app/
 ### Netlify Link
 
 https://hindustantimescloned.netlify.app/
+ 
 ------
  <h1>WEBSITE USER FLOW ></h1>
 
