@@ -22,7 +22,7 @@ movement as a nationalist daily.
 
 ### Netlify Link
  
-https://hindustantimescloned.netlify.app/
+https://hindustantimesproject.netlify.app
  
  
  ### Following are the Screenshots for the reference
@@ -66,7 +66,7 @@ https://hindustantimescloned.netlify.app/
 
 ### Netlify Link
 
-https://hindustantimescloned.netlify.app/
+https://hindustantimesproject.netlify.app
  
 ------
  <h1>WEBSITE USER FLOW ></h1>
