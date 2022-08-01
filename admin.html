@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+<style>
+    body{
+        background-color: aliceblue;
+    }
+    #nav
+    {
+        height: 50px;
+        width: 100%;
+        border: 2px ;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    #side_menu
+    {
+        width: 15%;
+        height: 720px;
+        border:  2px ;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background-color: aquamarine;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #side_menu>div{
+        width: 90%;
+        height: 30px;
+        cursor: pointer;
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    #side_menu>div>p{
+        margin: auto;
+        margin-top: 10px;
+    }
+    #side_menu>div:hover
+    {
+       box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        
+
+    }
+    #container
+    {
+        display: flex;
+        gap: 5%;
+    }
+    #add>#form
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #add
+    {
+        width: 1000px;
+        border: 2px;
+        margin: auto;
+        margin-top: 15%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    }
+    #contain
+    {
+        border: 2px solid;
+        width: 1000px;
+    }
+    #contain>tbody
+    {
+        text-align: center;
+    }
+    #contain>thead
+    {
+        background-color: aquamarine;
+        border: 2px solid;
+    }
+    #tonav{
+        text-decoration: none;
+        color: black;
+    }
+
+</style>
+<body>
+    <div id="nav">
+
+    </div>
+    <div id="container">
+        <div id="side_menu">
+            <div>
+                <p><a id="tonav" href="./latest.html">Add News</a></p>
+                <p><a id="tonav" href="./input.html">Add Package</a></p>
+            </div>
+        </div>
+        <div>
+            <div id="add">
+                <form id="form">
+                    <select id="catogery">
+                        <option>India</option>
+                        <option>World</option>
+                        <option>Cities</option>
+                        <option>Entertainment</option>
+                        <option>Cricket</option>
+                        <option>Lifestyle</option>
+                        <option>Astrology</option>
+                        <option>Editorials</option>
+                    </select>
+                    <select id="type">
+                        <option>Top News</option>
+                        <option>Latest News</option>
+                        <option>Dont Miss</option>
+                    </select>
+                    <input type="text" id="heading" placeholder="Give Heading Here"/>
+                    <input type="text" id="desription" placeholder="write desription here"/>
+                    <input type="text" id="img" placeholder="give image url here"/>
+                    <input type="text" id="thum" placeholder="Thumbaile image url here"/>
+                    <input type="datetime-local" id="date"/>
+                    <input type="submit" id="submit" value="Add News"/>
+                </form>
+            </div>
+            
+            <div>
+                <table id="contain">
+                    <thead>
+                        <th>SR</th>
+                        <th>Date & time</th>
+                        <th>Icon</th>
+                        <th>NewsName</th>
+                        <th>Publish</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody id="upload">
+                        <!--append the data of uploded-->
+                    </tbody>
+                </table>
+        
+            </div>
+
+        </div>
+    </div>
+   
+</body>
+</html>
+<script>
+    var form=document.querySelector("#form");
+    var dispdata=JSON.parse(localStorage.getItem("newdata"))  || [] ;
+    displaydata(upload_data)
+    form.addEventListener("submit",myfunction)
+    function myfunction()
+    {
+        event.preventDefault();
+        var data={
+            catogery:form.catogery.value,
+            type:form.type.value,
+            heading:form.heading.value,
+            desription:form.desription.value,
+            photo:form.img.value,
+            thum:form.thum.value,
+            time:form.date.value,
+        };
+        dispdata.push(data);
+        localStorage.setItem("newdata",JSON.stringify(dispdata)); 
+        displaydata(upload_data)
+        window.location.reload();
+    }
+    var upload_data=JSON.parse(localStorage.getItem("newdata"))
+    var publish_data=JSON.parse(localStorage.getItem("postdata")) || [];
+    function displaydata(upload_data)
+    {
+       dispdata.forEach(function (elem,index)
+       {
+          var tr1=document.createElement("tr");
+          var td1=document.createElement("td");
+          td1.innerText=index+1;
+          var td2=document.createElement("td")
+          td2.innerText=elem.time;
+          var tdt=document.createElement("td");
+          tdt.setAttribute("src",elem.thum);
+          tdt.style.width="10px";
+          tdt.style.height="10px"
+          var td3=document.createElement("td");
+          td3.innerText=elem.heading;
+          var td4=document.createElement("td");
+          td4.innerText="Publish"
+          td4.style.color="blue";
+          td4.style.cursor="pointer"
+          var td5=document.createElement("td");
+          td5.innerText="Delete"
+          td5.style.color="red";
+          td5.style.cursor="pointer" 
+          tr1.append(td1,td2,tdt,td3,td4,td5);
+          document.querySelector("#upload").append(tr1)
+          td4.addEventListener("click" ,publish)
+          function publish()
+          {
+            publish_data.push(elem);
+            localStorage.setItem("postdata",JSON.stringify(publish_data));
+          }
+          td5.addEventListener("click",news_del)
+       });
+    }
+    function news_del(elem)
+    {
+        event.target.parentNode.remove();
+    }
+</script>

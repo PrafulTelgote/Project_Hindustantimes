@@ -1,0 +1,225 @@
+/* #nav-top{
+    width:auto;
+    height:110px;
+    display: flex;
+    position: sticky;
+    /* background-color: rgb(1,30,41); */
+    /* margin-top: -8px; */
+/* }
+#nav-top>div:nth-child(1){
+    width:30%;
+    height:100%;
+}
+#nav-top>div:nth-child(2){
+   width:40%;
+   height:100%;
+}
+#nav-top>div:nth-child(3){
+   width:30%;
+   height:100%;
+}
+#Sbar{
+   width:60%;
+   height:30%;
+   margin-left: 20px;
+  display:flex;
+  color:aliceblue;
+  justify-content: space-around;
+  cursor: pointer;
+}
+#nav-img{
+    width:90%;
+    margin-top: 10px;
+   margin-top: 20px;
+   margin-left: 25px;
+   cursor: pointer;
+}
+#Sfont{
+   display: flex;
+}
+#Sfont>i{
+  
+   margin-top: 22px;
+   margin-right: 5px;
+}
+#col-3-r1{
+   height: 50%;
+   width:90%;
+   margin:auto;
+   display: flex;
+   color: aliceblue;
+   justify-content: space-around;
+   cursor: pointer;
+}
+#Sus-btn{
+   display: flex;
+   color:aliceblue;
+   width:70%;
+  justify-content: space-between;
+  margin-left:70px ;
+}
+#Sus-btn>button{
+margin-top: 18px;
+margin-bottom: 18px;
+padding-left: 15px;
+padding-right: 15px;
+border-radius: 10px;
+border: 0px;
+cursor: pointer;
+}
+#games{
+   display: flex;
+   color:aliceblue;
+}
+#games>i{
+   margin-top: 22px;
+   margin-right: 5px;
+}
+
+#paper{
+   display: flex;
+   color:aliceblue
+}
+#paper>i{
+   margin-top: 22px;
+   margin-right: 5px;
+}
+#Slogo{
+   display: flex;
+   color:aliceblue
+}
+#Slogo>i{
+   margin-top: 22px;
+   margin-right: 5px;
+}
+#date{
+   display: flex;
+   margin-top: 10px;
+   margin-left: 20px;
+   /* margin: auto; */
+   /* display: flex;
+   width:90%;
+   height: 50%;
+   justify-content: space-around;
+   color:aliceblue;
+}
+#date>input{
+   background-color: rgb(1,30,41);
+  margin-top: 10px;
+   color:white;
+   border:0px;
+   
+}
+#nav-mid{
+   height:50px;
+   width:auto;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   position: sticky;
+   display: flex;
+   justify-content: space-evenly;
+   font-weight: bolder;
+   font-family: sans-serif;
+   margin-top: 5px;
+}
+#nav-mid>p:hover{
+   color:rgb(0,177,205);
+   cursor: pointer;
+   font-size: 20px;
+} */ 
+   /* body
+   {
+       background-color: rgb(230, 221, 221);
+   } */
+   #main_box
+   {
+       display: flex;
+       gap: 10px;
+       width: 98%;
+       height: 100%;
+       margin: auto;
+       justify-content: space-between;
+   }
+   #right
+   {
+       height: 100%;
+       width: 20%;
+       background-color: white;
+       box-shadow: rgba(0.15, 0.15, 0.15, 0.15) 1.95px 1.95px 2.6px;
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+       margin-top: 2.5%;
+   }
+   #right:hover{
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   }
+   #middel
+   {
+       height: 100%;
+       width: 45%;
+       margin-top: 2.5%;
+       background-color: white;
+       box-shadow: rgba(0.15, 0.15, 0.15, 0.15) 1.95px 1.95px 2.6px;
+   }
+   #middel:hover{
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   }
+   #left
+   {
+       height: 100%;
+       width: 30%;
+       margin-top: 2.5%;
+       background-color: white;
+       box-shadow: rgba(0.15, 0.15, 0.15, 0.15) 1.95px 1.95px 2.6px;
+   }
+   #left:hover{
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   }
+   
+
+   #img_box>div,#short_box>div,#updat_box>div
+   {
+      padding: 10px 10px 10px 10px;
+       width: 92%;
+       cursor: pointer;
+       margin: auto;
+       border-radius: 6px;
+       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   }
+   #img_box>div:hover,#short_box>div:hover,#updat_box>div
+   {
+       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   }
+   #img_box>div>div,#updat_box>div>div{
+      display: flex;
+      justify-content: space-between;
+   }
+   #short_box>div
+   {
+       display: flex;
+   }
+   #middel>h1,#right>h2,#left>h2{
+       text-align: center;
+   }
+   #contain>div
+   {
+       padding: 0px 10px 10px 10px;
+       width: 90%;
+       cursor: pointer;
+       margin: auto;
+       border-radius: 6px;
+   
+   }
+   #left_contain>div
+   {
+      cursor: pointer;
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 10px 10px 10px;
+
+   }
+   #left_contain>div>img{
+      width: 30%;
+      height: 100px;
+   }

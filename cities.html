@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cities</title>
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./universal.css">
+    <script src="https://kit.fontawesome.com/a800b18a23.js" crossorigin="anonymous"></script> 
+    <style>
+        #maindiv{
+            width: 85%;height: auto;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+        }
+        #left{
+            width: 18%;height: auto;
+            
+        }
+        #center{
+            width: 54%;height: auto;
+            padding: 20px;
+            margin: auto;
+        }
+        
+        .news_source{
+            width:100%;height: 20px;
+        }
+        #right{
+            width: 23%;height: auto;
+        }
+        .latest_news{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        .latest_news_heading{
+            font-weight: bold;
+            line-height: 20px;
+            font:900;
+            cursor: pointer;
+            
+        }
+        .latest_news_heading:hover{
+            font-weight:bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           
+        }
+        .latest_news div{
+            padding: 5px;            
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+         .latest_news h4{            /* heading of colm */
+            margin-bottom: 5px;
+            text-align: center;
+            font-weight:900;
+            
+        }
+        .see_more{
+            color:  #00b1cd;
+            font-weight: bolder;
+            text-align: center;
+            margin: auto;
+            cursor: pointer;            
+        }
+        /* for top news */
+        .top_news h4{            /* heading of colm */
+            margin-bottom: -5px;
+            text-align: center;
+            font-weight:900;
+            margin-top: 60px;
+        }
+        .top_news div{
+            padding: 5px;            
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+        .top_news{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        /* right side */
+        .subdiv_shadow{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+        .div_shadow{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        /* *{
+            padding: 5px;
+        } */
+        .right_1_big_img{
+        width: 100%;
+        }
+        
+        .rightside_div{
+            display: inline;
+            width: 100%;height: 150px;
+        }
+        /* -----=====---===-=====center-----======= */
+        #center{
+             margin-top: -40px; /*##@@@@@@@^^^^^^^*****$$$$#### yu need to take care of it during merging */
+        }
+        .center_heading{
+            font-size: larger;
+            font-weight: 800;
+            font-family:Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+        .main_heading{
+            font: 100px;
+            font-weight: 1000;font-family: Arial, Helvetica, sans-serif;
+            color:#00b1cd;
+            text-align: center;
+            text-decoration:underline;
+        }
+       
+        
+        
+    </style>
+</head>
+<body>
+   <!-- ///nav/// -->
+
+   <div id="nav-top">
+    <div>
+       <div id="Sbar">
+        <h3><a id="puclishbtn" href="./admin.html">Explore</a></h3>
+                <div id="Sfont">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h3>Search</h3>
+            </div>
+        </div>
+
+       <div id="date">
+          <h2 id="dater"></h2>
+           <h4>New Delhi 33 C</h4>
+       </div>
+    </div>
+
+     <div>
+         <img id="nav-img"
+         src="https://www.hindustantimes.com/res/images/ht-logo.svg" alt="">
+     </div>
+
+    <div>
+        <div id="col-3-r1">
+            <div id="games">
+                <i class="fa-solid fa-gamepad"></i>
+                <h3>Games</h3>
+            </div>
+            <div id="paper">
+                <i class="fa-solid fa-file-pdf"></i>
+                <h3>E-paper</h3>
+            </div>
+            <div id="Slogo">
+                <i class="fa-solid fa-person"></i>
+                <h3><a class="myac" id="linkSing" href="./signin.html">Sign in</a></h3>
+            </div>
+        </div>
+        <div id="Sus-btn">
+            <p>Start 15 Days Free Trial</p>
+            <button><a class="buttonPro" href="./subscibtion.html">Suscribe</a></button>              
+        </div>
+    </div>
+</div>
+<div id="nav-mid">
+    <p><a class="pages" href="./latest.html">Home</a></p>
+     <p><a class=" pages" href="./latest.html">Latest</a></p>
+     <p><a class=" pages" href="./india.html">india</a></p>
+     <p><a class=" pages" href="./latest.html">World</a></p>
+     <p><a class=" pages" href="./cities.html">Cities</a></p>
+     <p><a class=" pages" href="./entertainment.html">Entertainment</a></p>
+     <p><a class=" pages" href="./latest.html">Cricket</a></p>
+     <p><a class=" pages" href="./lifestyle.html">Lifestyle</a></p>
+     <p><a class=" pages" href="./Astrology.html">Astrology</a></p>
+     <p><a class=" pages" href="./Editorials.html">Editorials</a></p>
+     <p><a class=" pages" href="./ForYou.html">For you</a></p>
+     <p><a class=" pages" href="./Saved.html">Saved</a></p>
+</div>
+
+   <!-- ///main.//// -->
+     <div id="maindiv"> <!--this is main div -->
+        <div id="left">  <!--this is left div -->
+            
+            <div class="latest_news"></div>
+            <div class="top_news"></div>
+
+        </div>
+        <div id="center"></div>  <!--this is center div -->
+
+        <div id="right"></div>   <!--this is right div -->
+
+    </div>
+
+
+    <!-- ///footer/// -->
+
+    <div id="footer">
+        <div id="up-part">
+           <div>
+               <img id="Fimg" img src="https://images.hindustantimes.com/images/app-images/2022/2/ht-logo.svg" alt="">
+              <img src="https://images.hindustantimes.com/images/app-images/2022/2/mweb_button_svg.svg" alt="">
+   
+           </div>
+           <h3>Suscribe To Our Best newsletter</h3>
+           <div id="up-mid">
+               <div id="inptag">
+                   <select name="" id="sel">
+                       <option value="">HT Daily Capsule</option>
+                       <option value="">@HT_Ed Calling</option>
+                       <option value="">HT Week Ahead</option>
+                       <option value="">HT Capital Letter</option>
+                   </select>
+                   <input id="inp"type="text" placeholder="Enter Email Address">
+                   <button><a class="buttonultra" href="./subscibtion.html">Suscribe</a></button>               </div>
+               <div id="srcs">
+                   <img src="https://images.hindustantimes.com/images/app-images/2022/1/footer-icons/fb-logo.svg" alt="">
+                   <img src="https://images.hindustantimes.com/images/app-images/2022/1/footer-icons/in-logo.svg" alt="">
+                   <img src="https://images.hindustantimes.com/images/app-images/2022/2/instagram.svg" alt="">
+                   <img src="https://images.hindustantimes.com/images/app-images/2022/1/footer-icons/tw-logo.svg" alt="">
+               </div>
+           </div>
+        </div>
+        <hr>
+   
+        <div id="mid-part">
+             <div>
+                 <h4>LATEST NEWS</h4>
+                 <h4>WORLD NEWS</h4>
+                 <h4>INDIA NEWS</h4>
+                 <h4>CRICKET</h4>
+                 <h4>CITY NEWS</h4>
+                 <p>Bengluru</p>
+                 <p>Pune</p>
+                 <p>Indore</p>
+                 <p>Dehradun</p>
+                 <p>Bhopal</p>
+                 <p>Delhi</p>
+                 <p>Khargone</p>
+                 <p>Kolkata</p>
+                 <p>Mumbai</p>
+             </div>
+             <div>
+                 <p>Ranchi</p>
+                 <p>Others</p>
+                 <h4>ENTERTAINMENT</h4>
+                 <p>Bollywood</p>
+                 <p>Hollywood</p>
+                 <p>Music</p>
+                 <p>Tamil Cinema</p>
+                 <p>Telugu Cinema</p>
+                 <P>Others</P>
+                 <h4>ASTROLOGY</h4>
+                 <p>Horoscope</p>
+                 <p>Vastu</p>
+                 <p>Gemstone</p>
+                 <p>Compatibility Calculater</p>
+             </div>
+             <div>
+                 <h4>EDUCATION</h4>
+                 <p>Admission News</p>
+                 <p>Board Exam</p>
+                 <p>Competitive Exam</p>
+                 <p>Employment News</p>
+                 <p>Exam Result</p>
+                 <p>Education News</p>
+                 <h4>LIFESTYLE</h4>
+                 <p>Art & Culture</p>
+                 <p>Fashion</p>
+                 <p>Festival</p>
+                 <p>Health</p>
+                 <h4>WEB STORIES</h4>
+                 <h4>TRENDING</h4>
+             </div>
+             <div>
+                 <h4>BUSINESS</h4>
+                 <h4>PHOTOS</h4>
+                 <h4>VIDEO</h4>
+                 <h4>BUDGET</h4>
+                 <h4>ENVIRONMENT</h4>
+                 <h4>SCIENSE</h4>
+                 <h4>SPORTS</h4>
+                 <p>Badminton</p>
+                 <p>Soccer</p>
+                 <p>Kabbadi</p>
+                <h4>BOOKS</h4>
+                <h4>HT WEEKEND</h4>
+                <h4>BRAND POST</h4>
+             </div>
+             <div>
+                 <h4>BRAND STORIES</h4>
+                 <h4>ELECTION</h4>
+                 <p>Utter Pradesh Assembly Election</p>
+                 <p>Punjab Assebly Election</p>
+                 <p>Goa Assebly Election</p>
+                 <p>Uttarakhand Assebly Election</p>
+                 <p>Manipur Assebly Election</p>
+                 <h4>QUICKREADS</h4>
+                 <h4>COVIS-19</h4>
+                 <h4>ASSEMBLY ELECTION</h4>
+                 <h4>GAMES</h4>
+             </div>
+             <div>
+                 <h4>TRENDING NEWS</h4>
+                 <p>India covis cases</p>
+                 <p>Russia & Ukraine War </p>
+                 <p>LIC IPO</p>
+                 <p>Jodhpur Violence</p>
+                 <h4>TRENDING TOPICS</h4>
+                 <p>IPL News</p>
+                 <p>Petrol Prices</p>
+                 <p>Daily Market</p>
+                 <p>Today Horoscope</p>
+             </div>
+        </div>
+    
+       </div>
+       <div id="low-part">
+           <div id="L1">
+               <h4>About Us</h4>
+               <h4>Contact Us</h4>
+               <h4>Terms of Use</h4>
+               <h4>Privacy Policy</h4>
+               <h4>Wheather Today</h4>
+               <h4>HT Newsletter</h4>
+               <h4>Suscription</h4>
+               <h4>Disclaimer</h4>
+               <h4>Print Ad Rates</h4>
+               <h4>Code of Ethics</h4>
+               <h4>Site Map</h4>
+               <h4>RSS Feeds</h4>
+           </div>
+        </div>
+        <hr>
+        <div id="L2">
+           <img src="https://images.hindustantimes.com/images/app-images/2022/1/footer-icons/mint-logo.svg" alt="">
+           <img src="https://images.hindustantimes.com/images/app-images/2022/1/footer-icons/HH-logo.svg" alt="">
+           <img src="https://images.hindustantimes.com/images/app-images/2022/1/footer-icons/mint-lounge.svg" alt="">
+           <img src="https://images.hindustantimes.com/images/app-images/2022/1/footer-icons/HT_Auto.svg" alt="">
+           <img src="https://images.hindustantimes.com/images/app-images/2022/1/footer-icons/ht-tech.svg" alt="">
+           <img src="https://images.hindustantimes.com/images/app-images/2022/1/footer-icons/ht-bangla.svg" alt="">
+           <img src="https://images.hindustantimes.com/images/app-images/2022/1/footer-icons/healthshots.png" alt="">
+           <img src="https://images.hindustantimes.com/images/app-images/2022/1/footer-icons/OTT-icon.png" alt="">
+           <img src="https://images.hindustantimes.com/images/app-images/2022/1/footer-icons/slurrp-icon.svg" alt="">
+           <img src="https://images.hindustantimes.com/images/app-images/2022/1/footer-icons/smartcast-logo.png" alt="">
+       </div>
+
+
+</body>
+</html>
+<script>
+
+var name = localStorage.getItem("name1")||"Login"
+console.log(name)
+var myac = document.querySelector(".myac")
+
+  if(name!=""){
+    myac.innerHTML=name
+  }
+
+    var d = new Date();
+        var date = d.getDate();
+        var year = d.getFullYear();
+        var month = d.getMonth();
+        var monthArr = ["January", "February","March", "April", "May", "June", "July", "August", "September", "October", "November","December"];
+        month = monthArr[month];
+    
+        
+      
+    var zakas = document.getElementById('dater')
+    zakas.innerHTML=date+" "+month+" "+year
+    
+    </script>
+
+<script src="home left side.js"></script>
+<script src="center.js"></script>
+<script src="center1.js"></script>
+<script src="home right side.js"></script>
+<script src="home center side.js"></script>

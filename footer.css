@@ -1,0 +1,139 @@
+#footer{
+    background-color: rgb(1,30,41);
+    height: auto;
+  margin-top: 20px;
+}
+#up-part{
+    height: 200px;
+  
+
+}
+#up-part>div:nth-child(1){
+    height:40%;
+    width:95%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+#Fimg{
+    width:40%;
+    margin-top: 10px;
+}
+#Fimg+img{
+    cursor: pointer;
+    margin-top: 10px;
+}
+div+h3{
+    color:white;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+#inptag{
+    width:60%;
+    margin-left: 20px;
+}
+#sel{
+    padding: 10px;
+    border: 0px;
+    border-radius: 3px;
+}
+#inp{
+    padding: 10px 55px 10px 15px;
+    margin-top: -8px;
+    border: 0px;
+}
+#inp+button{
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(1,30,41);
+    border: 1px solid white;
+    border-radius: 3px;
+    color:white;
+    cursor: pointer;
+}
+#up-mid{
+    display: flex;
+    justify-content: space-between;
+}
+#srcs{
+    width:20%;
+    
+}
+hr{
+    width:97%;
+    margin: auto;
+}
+
+#mid-part{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width:98%;
+    margin: auto;
+    gap:20px;
+}
+#mid-part>div>h4{
+    color:white
+}
+#mid-part>div>p{
+    color:grey;
+}
+#mid-part>div>h4:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#mid-part>div>p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color:antiquewhite
+}
+#low-part{
+    background-color: rgb(0,19,26);
+    padding-bottom: 20px;
+}
+#L1{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows:repeat(2,auto);
+    gap:10px;
+    width:90%;
+    margin: auto;
+    color:white
+}
+#L1>h4:hover{
+   cursor: pointer;
+}
+#L2{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    gap:10px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    background-color: rgb(0,19,26);
+
+}
+#L2>img{
+    width:70%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#L2>img:hover{
+    cursor: pointer;
+}
+@media all and (min-width:700px) and (max-width:900px){
+    #mid-part{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:20px;
+    }
+    #L1{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:20px;
+    }
+    #L2{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:20px;
+    }
+   
+}

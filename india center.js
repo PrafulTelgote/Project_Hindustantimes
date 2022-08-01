@@ -27,6 +27,7 @@ arr1.forEach(function (ele){
     var h3 = document.createElement("h3")
     h3.innerText = "INDIA NEWS"
     h3.style.color = "#00b1cd"
+    
 
     var p = document.createElement("p")
     p.innerText = ele.heading

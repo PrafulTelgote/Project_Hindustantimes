@@ -1,0 +1,143 @@
+ 
+ #nav-top{
+     width:auto;
+     height:110px;
+     display: flex;
+     position: sticky;
+     background-color: rgb(1,30,41);
+     margin-top: -8px;
+     /* position: fixed; */
+ }
+ #nav-top>div:nth-child(1){
+     width:30%;
+     height:100%;
+ }
+ #nav-top>div:nth-child(2){
+    width:40%;
+    height:100%;
+}
+#nav-top>div:nth-child(3){
+    width:30%;
+    height:100%;
+}
+#Sbar{
+    width:60%;
+    height:30%;
+    margin-left: 20px;
+   display:flex;
+   color:aliceblue;
+   justify-content: space-around;
+   cursor: pointer;
+}
+#nav-img{
+     width:90%;
+     margin-top: 10px;
+    margin-top: 20px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+#Sfont{
+    display: flex;
+}
+#Sfont>i{
+   
+    margin-top: 22px;
+    margin-right: 5px;
+}
+#col-3-r1{
+    height: 50%;
+    width:90%;
+    margin:auto;
+    display: flex;
+    color: aliceblue;
+    justify-content: space-around;
+    cursor: pointer;
+}
+#Sus-btn{
+    display: flex;
+    color:aliceblue;
+    width:70%;
+   justify-content: space-between;
+   margin-left:70px ;
+}
+#Sus-btn>button{
+margin-top: 18px;
+margin-bottom: 18px;
+padding-left: 15px;
+padding-right: 15px;
+ border-radius: 10px;
+ border: 0px;
+ cursor: pointer;
+}
+#games{
+    display: flex;
+    color:aliceblue;
+}
+#games>i{
+    margin-top: 22px;
+    margin-right: 5px;
+}
+
+#paper{
+    display: flex;
+    color:aliceblue
+}
+#paper>i{
+    margin-top: 22px;
+    margin-right: 5px;
+}
+#Slogo{
+    display: flex;
+    color:aliceblue
+}
+#Slogo>i{
+    margin-top: 22px;
+    margin-right: 5px;
+}
+#date{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+    /* margin: auto; */
+    display: flex;
+    width:90%;
+    height: 50%;
+    justify-content: space-around;
+    color:aliceblue;
+}
+#date>input{
+    background-color: rgb(1,30,41);
+   margin-top: 10px;
+    color:white;
+    border:0px;
+    
+}
+#nav-mid{
+    height:50px;
+    width:auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: sticky;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bolder;
+    font-family: sans-serif;
+    margin-top: 5px;
+   
+}
+
+#linkSing{
+    text-decoration: none;
+    color:white;
+}
+.buttonPro{
+    text-decoration: none;;
+    color:black;
+}
+.buttonultra{
+    text-decoration: none;
+    color:white;
+}
+#puclishbtn{
+    text-decoration: none;
+    color:white;
+}

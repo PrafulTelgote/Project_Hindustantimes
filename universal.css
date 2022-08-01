@@ -1,0 +1,10 @@
+.pages{
+    text-decoration: none;
+    color: black;
+}
+.pages:hover{
+    color:rgb(0,177,205);
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+}

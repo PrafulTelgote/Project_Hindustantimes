@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="input">
+      <input id="validity" type="text" placeholder="planevalidity">
+      <input id="trial" type="text" placeholder="day trial">
+      <input id="totalamount" type="text" placeholder="total amount">
+      <input id="actualamount" type="text" placeholder="actual amount">
+      <input id="percentage" type="percentage" placeholder="off percentage">
+      <input type="submit">
+    </form>
+    <form id="combo">
+        <input id="tolamount" type="text" placeholder="total amount">
+        <input id="atlamount" type="text" placeholder="actual amount">
+        <input type="submit">
+    </form>
+</body>
+</html>
+<script>
+    document.querySelector("#input").addEventListener("submit",myfunction);
+         var dataarr = JSON.parse(localStorage.getItem("planedata")) ||[];
+
+    function myfunction(){
+        event.preventDefault();
+        var obj = {
+                validity:input.validity.value,
+                trialday:input.trial.value,
+                tolamount:input.totalamount.value,
+                actamount:input.actualamount.value,
+                per:input.percentage.value,
+        };
+        dataarr.push(obj);
+        console.log(dataarr);
+        localStorage.setItem("planedata",JSON.stringify(dataarr));
+    }
+    document.querySelector("#combo").addEventListener("submit",combofun);
+
+    var comboarr = [];
+
+    function combofun(){
+        event.preventDefault();
+        var obj = {
+            tolamt:combo.tolamount.value,
+            actamt:combo.atlamount.value,
+        }
+        comboarr.push(obj);
+        console.log(comboarr);
+        localStorage.setItem("combodata",JSON.stringify(comboarr));
+    }
+
+</script>

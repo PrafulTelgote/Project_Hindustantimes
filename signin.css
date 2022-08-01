@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ img{
+     height: 40px;
+    
+     margin: auto;
+     margin-left: 40%; 
+     margin-top: 10px;
+     
+ }
+ div{
+     background-color: white;
+ }
+ h1{
+     text-align: center;
+     margin-top: 40px;
+     margin-bottom: 30px;
+ }
+ body{
+     background-color: rgb(230, 227, 227);
+ }
+ #container{
+    
+    height: 700px;
+    width: 500px;
+    box-shadow: rgb(143, 136, 136);
+    margin: auto;
+    
+ }
+ #container>div{
+     
+    display:grid;
+  
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,30px);
+     /* border: 1px solid red; */
+     
+    height: 50px;
+    gap: 30px;
+    width: 80%;
+    margin: auto;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+ }
+ #google{
+     background-color: rgb(245, 240, 240);
+     cursor: pointer;
+    
+     
+ }
+ #google>h3>img{
+     height:20px;
+     margin-left: -10px;
+     
+ }
+ #fb{
+     background-color: rgb(65, 65, 237);
+     color: white;
+     cursor: pointer;
+   
+ }
+ #fb>h3>img{
+    height:20px;
+    margin-left: -10px;
+   
+ }
+ #apple{
+     background-color: black;
+     color: white;
+     cursor: pointer;
+  
+ }
+ #apple>h3>img{
+    height:20px;
+    margin-left: -10px;
+ }
+ .or {
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    background: #fff;
+    padding: 0 170px;
+    font-weight: 700;
+    color: #757575;
+    margin: 5px 0 20px;
+}
+
+.or span {
+    background: #fff;
+    padding: 0 10px;
+    position: relative;
+}
+
+.or::before {
+    content: " ";
+    position: absolute;
+    top: 9px;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    background: #dbdbdb;
+}
+.mail{
+ margin-top: -20px;
+ margin-left: 50px;
+}
+#submit{
+    margin: auto;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    color: rgb(114, 110, 110);
+    border: 1px solid white;
+    cursor: pointer;
+    
+    
+     
+    
+}
+#submit:hover{
+   background-color: aqua;
+
+}
+
+.mail>span{
+    color: #ff0000;
+}
+#pass{
+    margin-left: 50px;
+    margin-top: -30px;
+}
+#pass>span{
+    color: #ff0000;
+}
+.clickme{
+    cursor: pointer;
+    color:rgb(13, 13, 246);
+    margin-left: 20px;
+}
+.have{
+    margin-left: 20px;
+}
+.forget{
+    margin-top: -30px;
+    margin-left: 330px;
+    
+}
+.forget:hover{
+   color:red;
+   cursor: pointer;
+}
+
+
+
+ 
