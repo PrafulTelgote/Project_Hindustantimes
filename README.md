@@ -79,11 +79,10 @@ home -> login/signup -> dashboard -> get started to news -> create user Id-> Ent
 we really enjoyed this whole part of developing and had a learing experience and have given our best efforts to bring the BEST thing as POSSIBLE.
 
 ### Team Members
-
+- **[Praful Telgote]**
 - **[Dhruv Gupta]**
 - **[Chetan Borkar])**
 - **[Lakhan Gurnule]**
 - **[Jitesh Babani]**
-- **[Praful Telgote]**
 - **[Rupak Tyagi]**
 ---
