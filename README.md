@@ -1,7 +1,7 @@
 ###  lookalike of website <span>Hindustan-Times Clone<span>
 
  <h2>Welcome to this repo</h2>
-We are team of 6 members ( Dhruv Gupta, Chetan Borkar, Lakhan Gurnule, Jitesh Babani, Praful Telgote, Rupak Tyagi ) has completed the task in 5 days and Given our best efforts to Construct this project.
+We are team of 6 members (Praful Telgote, Dhruv Gupta, Chetan Borkar, Lakhan Gurnule, Jitesh Babani,Rupak Tyagi ) has completed the task in 5 days and Given our best efforts to Construct this project.
 In case of any suggestion and query feel free to connect us.
  
  
