@@ -7,9 +7,10 @@ In case of any suggestion and query feel free to connect us.
  
  <h1>TOOLS AND TECHNOLOGY USED ></h1>
   <li>HTML </li>
-     <li>css</li>
-<li>javascript</li>  
+     <li>CSS</li>
+<li>Javascript</li>  
 <li>font Awesom icons</li>
+<li>Git</li>
 
 ### Project Description
  
@@ -22,7 +23,7 @@ movement as a nationalist daily.
 
 ### Netlify Link
  
-https://hindustantimesproject.netlify.app
+https://hindustantimesclonev1.netlify.app/
  
  
  ### Following are the Screenshots for the reference
