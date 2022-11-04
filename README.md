@@ -67,8 +67,7 @@ NA
 
 ### Netlify Link
 
-https://hindustantimesproject.netlify.app
- 
+N/A 
 ------
  <h1>WEBSITE USER FLOW ></h1>
 
