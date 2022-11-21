@@ -23,7 +23,7 @@ movement as a nationalist daily.
 
 ### Netlify Link
  
-NA
+https://hindustantimesapp.netlify.app/
  
  
  ### Following are the Screenshots for the reference
